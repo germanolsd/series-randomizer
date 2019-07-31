@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  --dark-color: #211f36;
+  --accent-color-1: #395bbc;
+  --accent-color-2: #c14b51;
+  --light-color-1: #fcfafb;
+  --light-color-2: #96a4c2;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-color);
+  color: var(--light-color-1);
+}
+.App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: var(--accent-color-2);
+  padding: 15px 20px;
+}
+.top-bar__text {
+  padding: 10px 0 20px;
+  font-size: 1.2em;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.input-container input {
+  background-color: var(--light-color-1);
+  border: 1px solid var(--light-color-1);
+  height: 30px;
+  width: calc(100% - 120px);
+  color: var(--dark-color);
+  padding: 0 20px;
+  border-radius: 5px;
+}
+.input-container input:focus {
+  outline: none;
+}
+.input-container button {
+  width: 100px;
+  border: 1px solid var(--light-color-1);
+  border-radius: 5px;
+}
+.body {
+  max-width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
